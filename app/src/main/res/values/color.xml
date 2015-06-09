@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="text_default">#4D4D4D</color>
+    <color name="text_disable">#BABABF</color>
+    <color name="text_enable">#478CB2</color>
+
+    <color name="material_grey_50">#FAFAFA</color>
+    <color name="material_grey_300">#E0E0E0</color>
+    <color name="material_grey_400">#BDBDBD</color>
+    <color name="underline_grey">#D4D4D4</color>
+    <color name="label_grey">#999999</color>
+    <color name="text_grey">#6B6B6B</color>
+    <color name="text_grey_light">#B0B8BD</color>
+    <color name="text_grey_dark">#757575</color>
+    <color name="text_grey_darker">#686868</color>
+    <color name="bg_grey_light">#E6EAED</color>
+    <color name="card_grey_dark">#E3E3E3</color>
+    <color name="card_grey_light">#F0F0F0</color>
+    <color name="status_bar_bg">#F2F2F5</color>
+
+
+    <color name="material_cyan_500">#00BCD4</color>
+
+    <color name="material_blue_A100">#82B1FF</color>
+    <color name="material_blue_A200">#448AFF</color>
+    <color name="material_blue_10">#8DB9D2</color>
+    <color name="material_blue_15">#D6E6Ef</color>
+    <color name="material_blue_20">#478CB2</color>
+    <color name="material_blue_50">#E3F2FD</color>
+    <color name="material_blue_400">#5094BA</color>
+    <color name="material_blue_500">#478CB2</color>
+    <color name="material_blue_600">#1E88E5</color>
+    <color name="material_blue_700">#2F5D77</color>
+
+    <color name="calendar_blue">#478CB2</color>
+    <color name="calendar_blue_dark">#3F7D9F</color>
+    <color name="calendar_selected">#478CB2</color>
+
+    <color name="material_green_200">#A5D6A7</color>
+    <color name="material_green_500">#4CAF50</color>
+    <color name="material_green_900">#1B5E20</color>
+
+    <color name="material_green_app">#9ABE53</color>
+    <color name="material_green_app_darker">#677F37</color>
+
+    <color name="material_light_green_500">#8BC34A</color>
+    <color name="material_light_green_800">#558B2F</color>
+
+    <color name="weekly_blue">#0099CC</color>
+    <color name="weekly_bar_blue">#0089B7</color>
+
+    <color name="material_red_400">#EF5350</color>
+    <color name="material_red_500">#F44336</color>
+    <color name="material_red_700">#D32F2F</color>
+
+    <color name="red_primary">#D42A3A</color>
+    <color name="red_primary_dark">#8E1C26</color>
+    <color name="red_primary_tab">#D73847</color>
+
+    <color name="collateral_violet">#FF985D9C</color>
+    <color name="collateral_violet_dark">#975C9B</color>
+    <color name="collateral_violet_light">#ba8fbc</color>
+
+    <color name="actionbar_gold">#E3EAAF</color>
+    <color name="btn_green">#A3C463</color>
+    <color name="btn_green_selected">#7AB841</color>
+    <color name="btn_red">#D42A3A</color>
+    <color name="btn_red_1">#E0626E</color>
+    <color name="btn_red_selected">#E0626E</color>
+    <color name="btn_red_disabled">#55000000</color>
+    <color name="btn_blue">#5094BA</color>
+    <color name="btn_blue_selected">#5094BA</color>
+    <color name="btn_blue_disabled">#55000000</color>
+
+    <color name="subtext_grey">#bbbbbb</color>
+    <color name="subtext_dark_grey">#ff656565</color>
+    <color name="light_grey">#e6e6e6</color>
+
+    <color name="performance_theme_color">#ffc3d152</color>
+    <color name="performance_theme_color_dark">#828C36</color>
+    <color name="performance_bg">#EEEEEE</color>
+    <color name="directory_theme_color">#ffd42b3b</color>
+
+    <color name="performance_orange_target">#EC8443</color>
+    <color name="performance_background">#535356</color>
+    <color name="performance_chart_closed">#C3D151 </color>
+    <color name="performance_chart_ffup">#6F7167 </color>
+    <color name="performance_chart_rejected">#3A3A39 </color>
+
+
+    <color name="material_purple_primary">#975C9B</color>
+    <color name="material_purple_primary_dark">#653D67</color>
+
+    <color name="black">#000000</color>
+
+</resources>

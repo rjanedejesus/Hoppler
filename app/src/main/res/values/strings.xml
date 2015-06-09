@@ -14,7 +14,24 @@
 
     <string name="action_example">Example action</string>
 
-    <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="signin">SIGN IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+
+    <string name="userinfo_reg">U S E R I N F O R M A T I O N</string>
+    <string name="email_reg">Email</string>
+    <string name="firstname_reg">First Name</string>
+    <string name="lastname_reg">Last Name</string>
+    <string name="mobilenumber_reg">Mobile Number (optional)</string>
+    <string name="password_reg">Password</string>
+    <string name="repassword_reg">Re-enter Password</string>
+    <string name="wantto_reg">I WANT TO : </string>
+    <string name="checkbox_search">Search through properties ONLY</string>
+    <string name="checkbox_upload">Upload properties I OWN</string>
+    <string name="checkbox_broker">Broker real-estate properties</string>
+    <string name="subscribe1">Subscribe to the Hoppler Newsletter</string>
+    <string name="subscribe2">Subscribe to the Hoppler Newsletter</string>
+
 </resources>

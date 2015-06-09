@@ -8,10 +8,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import com.brewedconcepts.hoppler.R;
 
+
 /**
  * Created by RoseJane on 6/8/2015.
  */
+
+
+
 public class SplashActivity extends Activity {
+
+    private Handler handler;
+    private Runnable callback;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +27,23 @@ public class SplashActivity extends Activity {
 
         final ImageView iv = (ImageView)findViewById(R.id.imageView);
 
-        Intent i = new Intent(this,MainActivity.class);
-        startActivity(i);
+       handler = new Handler();
+       callback = new Runnable() {
+           @Override
+           public void run() {
+               startActivity(new Intent(getApplicationContext(), LoginScreen.class));
+               finish();
+               overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+           }
+       };
+       handler.postDelayed(callback, 5000);
+   }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        handler.removeCallbacks(callback);
+
+
    }
 }
