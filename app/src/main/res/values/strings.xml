@@ -33,5 +33,10 @@
     <string name="checkbox_broker">Broker real-estate properties</string>
     <string name="subscribe1">Subscribe to the Hoppler Newsletter</string>
     <string name="subscribe2">Subscribe to the Hoppler Newsletter</string>
+    <string name="here_about">Where did you here about us?</string>
+    <string name="cancel">Cancel</string>
+    <string name="register">Register</string>
+    <string name="bysigning1">By signing up you are aggreeing</string>
+    <string name="bysigning2">to the Terms and conditions.</string>
 
 </resources>
