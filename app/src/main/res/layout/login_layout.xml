@@ -20,7 +20,7 @@
         <!--ALL ITEMS IN WHITE BACKGROUND-->
         <LinearLayout
             android:layout_width="309dp"
-            android:layout_height="411dp"
+            android:layout_height="370dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:background="#ffffff">
@@ -31,14 +31,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
+                android:layout_marginTop="10dp"
                 android:paddingRight="16dp">
                 <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/icn_email"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/icn_email"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginRight="10dp"/>
                 <EditText
                     android:id="@+id/email"
                     android:hint="@string/email"
@@ -46,8 +47,7 @@
                     android:layout_height="wrap_content"
                     android:fontFeatureSettings="roboto-regular"
                     android:textSize="16dp"
-                    android:textColor="#4f4f4f"
-                    android:layout_marginTop="10dp"/>
+                    android:textColor="#4f4f4f"/>
             </LinearLayout>
 
             <!--layout of password + picture-->
@@ -62,7 +62,8 @@
                     android:layout_height="18dp"
                     android:id="@+id/icn_pass"
                     android:src="@drawable/icn_pass"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"/>
                 <EditText
                     android:id="@+id/password"
                     android:hint="@string/password"
@@ -97,7 +98,8 @@
                 android:text="@string/remember"
                 android:textSize="16dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customized_checkbox"/>
 
             <ImageView
                 android:layout_width="wrap_content"

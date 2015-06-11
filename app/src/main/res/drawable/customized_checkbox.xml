@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true">
+        <shape>
+            <image android:background="@drawable/check_on"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <image android:background="@drawable/check_off"/>
+        </shape>
+    </item>
+</selector>
