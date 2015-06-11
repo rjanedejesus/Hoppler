@@ -15,7 +15,7 @@ public class LoginScreen extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        cache = Cache.open(Cache.CACHE_USER);
-        setContentView(R.layout.login_screen);
+        setContentView(R.layout.login_layout);
     }
 
 

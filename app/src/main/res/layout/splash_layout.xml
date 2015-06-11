@@ -1,8 +1,8 @@
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SplashActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/imageView"
-    android:src="@drawable/splashscreen"
-    android:scaleType="fitXY"/>
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".SplashActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/imageView"
+android:src="@drawable/splashscreen"
+android:scaleType="fitXY"/>

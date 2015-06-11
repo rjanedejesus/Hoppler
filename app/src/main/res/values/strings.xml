@@ -15,10 +15,12 @@
     <string name="action_example">Example action</string>
 
     <string name="email">Email</string>
+    <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="remember">Remember me</string>
     <string name="signin">SIGN IN</string>
     <string name="forgot_password">Forgot Password?</string>
-
+    <string name="reg">REGISTER</string>
 
     <string name="userinfo_reg">U S E R I N F O R M A T I O N</string>
     <string name="email_reg">Email</string>
@@ -38,5 +40,8 @@
     <string name="register">Register</string>
     <string name="bysigning1">By signing up you are aggreeing</string>
     <string name="bysigning2">to the Terms and conditions.</string>
+
+    <string name="login_text">LOGIN</string>
+
 
 </resources>
