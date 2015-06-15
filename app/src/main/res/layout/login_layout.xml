@@ -7,14 +7,17 @@
     android:background="@drawable/bg_login"
     android:scaleType="fitXY">
 
+        <!--Linear layout for navigation and menu button-->
+
+
         <!--IMAGE HOPPLER-->
         <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hopplerlogo"
         android:src="@drawable/logo_hoppler_white"
-        android:layout_marginTop="100dp"
         android:layout_marginBottom="14dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"/>
 
         <!--ALL ITEMS IN WHITE BACKGROUND-->
@@ -23,7 +26,7 @@
             android:layout_height="370dp"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:background="#ffffff">
+            android:background="@drawable/rounded_corner_bg">
 
             <!--layout of email + picture-->
             <LinearLayout
@@ -99,10 +102,12 @@
                 android:textSize="16dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/customized_checkbox"/>
+                android:button="@drawable/customized_checkbox"
+                android:visibility="visible"
+                android:textColor="@color/label_grey"/>
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/hr_or"
                 android:src="@drawable/hr_or"
@@ -120,7 +125,7 @@
                 android:layout_marginBottom="10dp"/>
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/hr_no_account"
                 android:src="@drawable/hr_no_account"
