@@ -1,8 +1,6 @@
 package com.brewedconcepts.hoppler;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -10,7 +8,6 @@ import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,20 +15,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.Toolbar;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity
+public class MainActivity2Activity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
-    private String[] mPlanetTitles;
-    private DrawerLayout mDrawerLayout;
-    private ListView mDrawerList;
-    private ActionBarDrawerToggle mDrawerToggle;
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -43,82 +32,10 @@ public class MainActivity extends ActionBarActivity
      */
     private CharSequence mTitle;
 
-     class DrawerItemClickListener implements ListView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView parent, View view, int position, long id) {
-//                    selectItem(position);
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-        // ---------- START ADDED JUNE 16, 2015 ---------//
-        mTitle = "test";
-
-        mPlanetTitles = new String[]{"one", "two", "three"};
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
-
-        // Set the adapter for the list view
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this,R.layout.drawer_list_item, mPlanetTitles));
-        // Set the list's click listener
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-
-        mDrawerToggle = new ActionBarDrawerToggle(
-                this,                  /* host Activity */
-                mDrawerLayout,         /* DrawerLayout object */
-//                R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */ --NAG-EERROR KASI
-                R.string.drawer_open,  /* "open drawer" description */
-                R.string.drawer_close  /* "close drawer" description */
-        ) {
-
-            /** Called when a drawer has settled in a completely closed state. */
-            public void onDrawerClosed(View view) {
-                getActionBar().setTitle(mTitle);
-            }
-
-            /** Called when a drawer has settled in a completely open state. */
-            public void onDrawerOpened(View drawerView) {
-                getActionBar().setTitle(mTitle);
-            }
-
-        };
-        // ---------- END ADDED JUNE 16, 2015 ---------//
-
-
-
-
-        //------------------ added ----------------------
-
-        Thread logoTimer = new Thread() {
-            public void run(){
-                try{
-                    int logoTimer = 0;
-                    while(logoTimer < 5000){
-                        sleep(100);
-                        logoTimer = logoTimer +100;
-                    };
-                    startActivity(new Intent("com.brewedconcepts.CLEARSCREEN"));
-                }
-
-                catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-                finally{
-                    finish();
-                }
-            }
-        };
-
-        logoTimer.start();
-
-        //------------------ added ----------------------
+        setContentView(R.layout.activity_main_activity2);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -129,8 +46,6 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
-
-
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
@@ -169,7 +84,7 @@ public class MainActivity extends ActionBarActivity
             // Only show items in the action bar relevant to this screen
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.main, menu);
+            getMenuInflater().inflate(R.menu.main_activity2, menu);
             restoreActionBar();
             return true;
         }
@@ -219,14 +134,14 @@ public class MainActivity extends ActionBarActivity
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_main_activity2, container, false);
             return rootView;
         }
 
         @Override
         public void onAttach(Activity activity) {
             super.onAttach(activity);
-            ((MainActivity) activity).onSectionAttached(
+            ((MainActivity2Activity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
