@@ -31,12 +31,14 @@ public class SplashActivity extends Activity {
        callback = new Runnable() {
            @Override
            public void run() {
-               startActivity(new Intent(getApplicationContext(), LoginScreen.class));
+               startActivity(new Intent(getApplicationContext(), MainActivity2Activity.class));
                finish();
                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
            }
        };
        handler.postDelayed(callback, 5000);
+
+
    }
 
     @Override
