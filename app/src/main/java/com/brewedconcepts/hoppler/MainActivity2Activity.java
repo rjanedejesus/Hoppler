@@ -1,6 +1,7 @@
 package com.brewedconcepts.hoppler;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -19,8 +20,17 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
+
 public class MainActivity2Activity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+    FragmentManager fragmentManager;
+    Fragment fragmentLogin;
+    Fragment fragmentReg;
+
+    private String[] tabs = { "Login", "Register"};
+
+
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -46,14 +56,32 @@ public class MainActivity2Activity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
-
+//
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+        fragmentManager = getSupportFragmentManager();
+        fragmentLogin =  new Login_Fragment();
+//        fragmentManager.beginTransaction()
+//                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+//                .commit();
+
+
+        switch (position) {
+            case 0:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragmentLogin)
+                        .commit();
+                break;
+            case 1:
+
+//                fragmentManager.beginTransaction()
+//                        .replace(R.id.container, fragmentLogin)
+//                        .commit();
+                break;
+
+        }
+
     }
 
     public void onSectionAttached(int number) {
