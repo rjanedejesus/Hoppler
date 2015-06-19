@@ -26,15 +26,15 @@
     <string name="email_reg">Email</string>
     <string name="firstname_reg">First Name</string>
     <string name="lastname_reg">Last Name</string>
-    <string name="mobilenumber_reg">Mobile Number (optional)</string>
+    <string name="mobilenumber_reg">Mobile Number (Optional)</string>
     <string name="password_reg">Password</string>
     <string name="repassword_reg">Re-enter Password</string>
     <string name="wantto_reg">I WANT TO : </string>
     <string name="checkbox_search">Search through properties ONLY</string>
     <string name="checkbox_upload">Upload properties I OWN</string>
     <string name="checkbox_broker">Broker real-estate properties</string>
-    <string name="subscribe1">Subscribe to the Hoppler Newsletter</string>
-    <string name="subscribe2">Subscribe to the Hoppler Newsletter</string>
+    <string name="subscribe1">Subscribe to the Hoppler Newsletter?</string>
+    <string name="subscribe2">Subscribe to the Hoppler Newsletter?</string>
     <string name="here_about">Where did you here about us?</string>
     <string name="cancel">Cancel</string>
     <string name="register">Register</string>
@@ -49,6 +49,6 @@
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
-    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_main_activity2"></string>
 
 </resources>

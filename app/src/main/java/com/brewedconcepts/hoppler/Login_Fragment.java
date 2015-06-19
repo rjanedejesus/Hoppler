@@ -28,15 +28,20 @@ public class Login_Fragment extends Fragment {
 //       ------------ORIGINAL CONTENT IN OnCreate-------------------
 
         ActionBar bar = ((ActionBarActivity) getActivity()).getSupportActionBar();
+        bar.setTitle("Login");
         bar.setHomeButtonEnabled(true);
         bar.setDisplayShowHomeEnabled(true);
 //        bar.setIcon(R.drawable.btn_nav_menu);
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#007EFE")));
 
 //        -----------------------------------------------------------
+
         return inflater.inflate(R.layout.login_layout, container, false);
 
     }
+
+
+
 
 //    FROM LOGIN ACTIVITY
 //    @Override
@@ -52,6 +57,7 @@ public class Login_Fragment extends Fragment {
 //
 //
 //    }
+
 
 
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -2,7 +2,6 @@
 
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowNoTitle">true</item>
-
         <!-- Support library compatibility -->
         <item name="windowActionBar">false</item>
 

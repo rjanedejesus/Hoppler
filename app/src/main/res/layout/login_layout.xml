@@ -23,7 +23,7 @@
         <!--ALL ITEMS IN WHITE BACKGROUND-->
         <LinearLayout
             android:layout_width="309dp"
-            android:layout_height="370dp"
+            android:layout_height="411dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:background="@drawable/rounded_corner_bg">
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:paddingRight="16dp">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -72,6 +72,7 @@
                 <EditText
                     android:id="@+id/password"
                     android:hint="@string/password"
+                    android:textSize="16dp"
                     android:imeOptions="actionDone"
                     android:inputType="textPassword"
                     android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                     android:fontFeatureSettings="roboto-regular"
                     android:textColor="#4f4f4f"/>
             </LinearLayout>
-            <TextView
+            <Button
                 android:id="@+id/login_text"
                 android:text="@string/login_text"
                 android:fontFeatureSettings="roboto-bold"
@@ -107,7 +108,9 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/customized_checkbox"
                 android:visibility="visible"
-                android:textColor="@color/label_grey"/>
+                android:textColor="@color/label_grey"
+                android:paddingLeft="10dp"
+                />
 
             <ImageView
                 android:layout_width="fill_parent"
@@ -136,7 +139,7 @@
                 android:paddingRight="16dp"
                 android:layout_marginBottom="10dp"/>
 
-            <TextView
+            <Button
                 android:id="@+id/register"
                 android:text="@string/reg"
                 android:fontFeatureSettings="roboto-bold"
