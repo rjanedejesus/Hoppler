@@ -25,12 +25,12 @@ public class Login_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-//       ------------ORIGINAL CONTENT IN OnCeate-------------------
+//       ------------ORIGINAL CONTENT IN OnCreate-------------------
 
         ActionBar bar = ((ActionBarActivity) getActivity()).getSupportActionBar();
         bar.setHomeButtonEnabled(true);
         bar.setDisplayShowHomeEnabled(true);
-        bar.setIcon(R.drawable.btn_nav_menu);
+//        bar.setIcon(R.drawable.btn_nav_menu);
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#007EFE")));
 
 //        -----------------------------------------------------------

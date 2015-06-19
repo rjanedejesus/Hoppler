@@ -62,6 +62,7 @@ public class MainActivity2Activity extends ActionBarActivity
         // update the main content by replacing fragments
         fragmentManager = getSupportFragmentManager();
         fragmentLogin =  new Login_Fragment();
+        fragmentReg =  new Registration_Fragment();
 //        fragmentManager.beginTransaction()
 //                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
 //                .commit();
@@ -75,9 +76,9 @@ public class MainActivity2Activity extends ActionBarActivity
                 break;
             case 1:
 
-//                fragmentManager.beginTransaction()
-//                        .replace(R.id.container, fragmentLogin)
-//                        .commit();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragmentReg)
+                        .commit();
                 break;
 
         }
