@@ -29,12 +29,12 @@
     <string name="mobilenumber_reg">Mobile Number (Optional)</string>
     <string name="password_reg">Password</string>
     <string name="repassword_reg">Re-enter Password</string>
-    <string name="wantto_reg">I WANT TO : </string>
+    <string name="wantto_reg">I Want to: </string>
     <string name="checkbox_search">Search through properties ONLY</string>
     <string name="checkbox_upload">Upload properties I OWN</string>
     <string name="checkbox_broker">Broker real-estate properties</string>
     <string name="subscribe1">Subscribe to the Hoppler Newsletter?</string>
-    <string name="subscribe2">Subscribe to the Hoppler Newsletter?</string>
+    <string name="subscribe2">Subscribe to Hoppler Newsletter?</string>
     <string name="here_about">Where did you here about us?</string>
     <string name="cancel">Cancel</string>
     <string name="register">Register</string>
@@ -42,6 +42,7 @@
     <string name="bysigning2">to the Terms and conditions.</string>
 
     <string name="login_text">LOGIN</string>
+    <string name="cancel_reg">CANCEL</string>
 
     <string name="login_activity_actions">Login</string>
     <string name="btn_nav_menu">Menu</string>
