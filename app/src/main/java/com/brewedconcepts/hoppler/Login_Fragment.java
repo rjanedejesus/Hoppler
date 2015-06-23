@@ -19,8 +19,6 @@ import android.widget.LinearLayout;
  */
 public class Login_Fragment extends Fragment {
 
-    private View mView;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
