@@ -9,7 +9,6 @@
 
         <!--Linear layout for navigation and menu button-->
 
-
         <!--IMAGE HOPPLER-->
         <ImageView
         android:layout_width="wrap_content"

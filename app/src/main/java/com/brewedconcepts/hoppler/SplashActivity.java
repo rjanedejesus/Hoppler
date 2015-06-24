@@ -13,8 +13,6 @@ import com.brewedconcepts.hoppler.R;
  * Created by RoseJane on 6/8/2015.
  */
 
-
-
 public class SplashActivity extends Activity {
 
     private Handler handler;
@@ -45,7 +43,5 @@ public class SplashActivity extends Activity {
     protected void onPause() {
         super.onPause();
         handler.removeCallbacks(callback);
-
-
    }
 }

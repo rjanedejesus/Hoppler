@@ -1,25 +1,14 @@
 package com.brewedconcepts.hoppler;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -35,7 +24,6 @@ public class MainActivity2Activity extends ActionBarActivity
     Fragment fragmentMap;
 
     private String[] tabs = {"Login", "Register"};
-
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -53,10 +41,8 @@ public class MainActivity2Activity extends ActionBarActivity
         setContentView(R.layout.activity_main_activity2);
 //        setContentView(R.layout.activity_maps);
 
-
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mTitle = getTitle();
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
@@ -67,12 +53,11 @@ public class MainActivity2Activity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragmentMap)
                 .commit();
+        setTitle(getString(R.string.title_section3));
     }
 
     //       FOR GOOGLE MAPS ****************************
-
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
-
 
     @Override
     protected void onResume() {
@@ -99,8 +84,7 @@ public class MainActivity2Activity extends ActionBarActivity
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
             // Try to obtain the map from the SupportMapFragment.
-            if (getSupportFragmentManager().findFragmentById(R.id.container) instanceof SupportMapFragment)
-            {
+            if (getSupportFragmentManager().findFragmentById(R.id.container) instanceof SupportMapFragment) {
                 mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.container))
                         .getMap();
                 // Check if we were successful in obtaining the map.
@@ -120,8 +104,6 @@ public class MainActivity2Activity extends ActionBarActivity
     private void setUpMap() {
         mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
     }
-
-
     //        ******************************************************************
 
     @Override
@@ -146,27 +128,6 @@ public class MainActivity2Activity extends ActionBarActivity
                         .replace(R.id.container, fragmentReg)
                         .commit();
                 break;
-//            case 2:
-//
-//                fragmentManager.beginTransaction()
-//                        .replace(R.id.container, fragmentReg)
-//                        .commit();
-//                setUpMapIfNeeded();
-//                break;
-
-        }
-
-    }
-
-    public void onSectionAttached(int number) {
-        switch (number) {
-            case 0:
-                mTitle = getString(R.string.title_section1);
-                break;
-            case 1:
-                mTitle = getString(R.string.title_section2);
-                break;
-
         }
     }
 
@@ -174,9 +135,8 @@ public class MainActivity2Activity extends ActionBarActivity
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
-//        actionBar.setTitle(mTitle);
+        actionBar.setTitle(getTitle());
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -202,48 +162,6 @@ public class MainActivity2Activity extends ActionBarActivity
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main_activity2, container, false);
-            return rootView;
-        }
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainActivity2Activity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
-        }
-    }
-
 }

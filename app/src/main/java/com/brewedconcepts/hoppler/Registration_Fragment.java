@@ -13,12 +13,15 @@ import android.view.ViewGroup;
  */
 public class Registration_Fragment extends Fragment {
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ActionBar bar2 = ((ActionBarActivity) getActivity()).getSupportActionBar();
-        bar2.setTitle("Registration");
         return inflater.inflate(R.layout.registration_layout, container, false);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Registration");
     }
 }

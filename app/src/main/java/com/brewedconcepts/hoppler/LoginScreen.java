@@ -33,8 +33,6 @@ public class LoginScreen extends Activity {
         getActionBar().setDisplayShowHomeEnabled(true);
         getActionBar().setIcon(R.drawable.btn_nav_menu);
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#007EFE")));
-
-
     }
 
     @Override
@@ -43,26 +41,6 @@ public class LoginScreen extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.login_activity_actions, menu);
         return true;
-
-
     }
-
-
-//    public static boolean isEmailValid(String email) {
-//        boolean isValid = false;
-//
-//        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
-//        CharSequence inputStr = email;
-//
-//        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
-//        Matcher matcher = pattern.matcher(inputStr);
-//        if (matcher.matches()) {
-//            isValid = true;
-//        }
-//        return isValid;
-//    }
-
-
-
 
 }
