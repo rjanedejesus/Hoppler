@@ -9,12 +9,16 @@ public class User {
     public String house_br;
     public String house_ba;
     public String house_id;
+    public String house_price;
+    public String house_img;
 
-    public User(String house_address, String house_sqm, String house_br, String house_ba, String house_id) {
+    public User(String house_address, String house_sqm, String house_br, String house_ba, String house_id, String house_price, String house_img) {
         this.house_address = house_address;
         this.house_sqm = house_sqm;
         this.house_br = house_br;
         this.house_ba = house_ba;
         this.house_id = house_id;
+        this.house_price = house_price;
+        this.house_img = house_img;
     }
 }

@@ -4,11 +4,15 @@
     android:layout_height="77dp"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="#ffffff">
+    android:background="#ffffff"
+
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
         <ImageView
             android:id="@+id/house_img"
             android:layout_width="77dp"
@@ -76,12 +80,6 @@
                         android:layout_marginLeft="14dp"/>
                 </LinearLayout>
             </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="14dp"
-            android:orientation="vertical">
             <TextView
                 android:id="@+id/house_price"
                 android:layout_width="wrap_content"
@@ -90,9 +88,8 @@
                 android:fontFamily="LucidaGrande_Gold"
                 android:textSize="17dp"
                 android:textColor="#FF6817"
-                android:layout_gravity="right"
+                android:layout_gravity="center"
                 android:layout_marginLeft="14dp"/>
-        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
