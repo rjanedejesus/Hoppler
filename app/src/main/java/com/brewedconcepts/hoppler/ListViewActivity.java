@@ -29,14 +29,14 @@ public class ListViewActivity extends Activity {
 
         ArrayList<User> arrayOfUsers = new ArrayList<User>();
 
-        String results = "{\"count\": \"3720\",\"results\": [{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"}]}";
+        String results = "{\"count\": \"3720\",\"results\": [{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"},{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"}]}";
 
         JSONObject myobj = null;
         try {
             myobj = new JSONObject(results);
             JSONArray json = myobj.getJSONArray("results");
 
-            Log.v("MyTag","" + json);
+//            Log.v("MyTag","" + results);
              String house_address_j;
              String house_sqm_j;
              String house_br_j;
@@ -44,19 +44,19 @@ public class ListViewActivity extends Activity {
              String house_id_j;
             String house_price_j;
 
-            Log.v("MyTag_array","" + json.length());
+//            Log.v("MyTag_array","" + json.length());
             for(int i = 0; i < json.length(); i++){
 
-                house_sqm_j = json.getJSONObject(i).get("floorArea").toString();
+                house_sqm_j = json.getJSONObject(i).get("floorArea").toString() + "sqm";
                 house_price_j = json.getJSONObject(i).get("rentalPrice").toString();
                 house_address_j = json.getJSONObject(i).get("addreNo").toString() + " " + json.getJSONObject(i).get("name").toString() + " " + json.getJSONObject(i).get("addreArea").toString() + " " + json.getJSONObject(i).get("addreCity").toString() + " " + json.getJSONObject(i).get("addreRegion").toString();
-                house_br_j = json.getJSONObject(i).get("bedrooms").toString();
-                house_ba_j = json.getJSONObject(i).get("bathrooms").toString();
-                house_id_j = json.getJSONObject(i).get("id").toString();
+                house_br_j = "BR" + json.getJSONObject(i).get("bedrooms").toString();
+                house_ba_j = "BA" + json.getJSONObject(i).get("bathrooms").toString();
+                house_id_j = "ID:" + json.getJSONObject(i).get("id").toString();
                 User user1 = new User(house_address_j, house_sqm_j, house_br_j, house_ba_j, house_id_j,house_price_j);
 
                 arrayOfUsers.add(user1);
-                Log.v("MyTag_array","" + house_sqm_j);
+               Log.v("MyTag_array","" + house_sqm_j);
             }
         } catch (JSONException e) {
             e.printStackTrace();
