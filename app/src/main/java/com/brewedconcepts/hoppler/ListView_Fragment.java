@@ -1,6 +1,6 @@
 package com.brewedconcepts.hoppler;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -29,6 +29,7 @@ public class ListView_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ActionBar bar = ((ActionBarActivity) getActivity()).getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#007EFE")));
+        View mRootView = inflater.inflate(R.layout.listview_main, container, false);
 
 
         stringArray = new String[0];
@@ -86,10 +87,16 @@ public class ListView_Fragment extends Fragment {
 
         UsersAdapter adapter = new UsersAdapter(getActivity(), arrayOfUsers);
         // Attach the adapter to a ListView
-        ListView listView = (ListView) getActivity().findViewById(R.id.listViewId);
+        ListView listView = (ListView) mRootView.findViewById(R.id.listViewId);
         listView.setAdapter(adapter);
 
-        return inflater.inflate(R.layout.login_layout, container, false);
+        return mRootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Listings Nearby");
     }
 }
 

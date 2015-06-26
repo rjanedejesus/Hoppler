@@ -21,6 +21,7 @@ public class MainActivity2Activity extends ActionBarActivity
     FragmentManager fragmentManager;
     Fragment fragmentLogin;
     Fragment fragmentReg;
+    ListView_Fragment fragmentListings;
     Fragment fragmentMap;
 
     private String[] tabs = {"Login", "Register"};
@@ -113,6 +114,7 @@ public class MainActivity2Activity extends ActionBarActivity
         fragmentLogin = new Login_Fragment();
         fragmentReg = new Registration_Fragment();
         fragmentMap = new SupportMapFragment();
+        fragmentListings = new ListView_Fragment();
 //        fragmentManager.beginTransaction()
 //                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
 //                .commit();
@@ -126,6 +128,11 @@ public class MainActivity2Activity extends ActionBarActivity
             case 1:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, fragmentReg)
+                        .commit();
+                break;
+            case 2:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragmentListings)
                         .commit();
                 break;
         }

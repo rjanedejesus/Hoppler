@@ -3,16 +3,18 @@
     package="com.brewedconcepts.hoppler" >
 
     <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="18" />
+    android:minSdkVersion="7"
+    android:targetSdkVersion="18" />
 
     <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    android:maxSdkVersion="18" />
+
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    android:name="android.permission.READ_EXTERNAL_STORAGE"
+    android:maxSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -22,11 +24,8 @@
     <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!--
- The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but are recommended.
-    -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.-->
 
     <application
         android:allowBackup="true"
@@ -36,11 +35,11 @@
 
         <!-- SplashActivity -->
         <activity android:name=".SplashActivity" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <!-- MapsActivity -->
@@ -56,27 +55,12 @@
         <!-- ListView -->
         <activity android:name=".ListViewActivity"
             android:label="@string/list_view">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
-
-
-
-        <!-- MainActivity with Navigation Drawer -->
-        <activity
-            android:name=".MainActivity2Activity"
-            android:label="@string/title_activity_main_activity2" >
-
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-             <category android:name="android.intent.category.HOME" />
-             <category android:name="android.intent.category.DEFAULT" />
-             </intent-filter>
-        </activity>
-
         <!-- Registration Screen -->
         <activity
             android:name=".RegistrationActivity"
@@ -107,9 +91,17 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <!-- MainActivity with Navigation Drawer -->
+        <activity
+            android:name=".MainActivity2Activity"
+            android:label="@string/title_activity_main_activity2" >
 
-
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.HOME"/>
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+        </activity>
 
     </application>
-
 </manifest>
