@@ -1,14 +1,20 @@
 package com.brewedconcepts.hoppler;
 
 
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
+import android.view.View;
+import android.widget.Button;
+
+import com.facebook.FacebookSdk;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -39,6 +45,9 @@ public class MainActivity2Activity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        // Initialize the SDK before executing any other operations,
+        // especially, if you're using Facebook UI elements.
         setContentView(R.layout.activity_main_activity2);
 //        setContentView(R.layout.activity_maps);
 
@@ -138,6 +147,8 @@ public class MainActivity2Activity extends ActionBarActivity
         }
     }
 
+
+
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
@@ -170,5 +181,14 @@ public class MainActivity2Activity extends ActionBarActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void setRegistrationToFragment() {
+        Log.v("MyTag_bool", "Clicked");
+        fragmentManager.beginTransaction()
+        .replace(R.id.container, fragmentReg)
+        .commit();
+
     }
 }
