@@ -1,9 +1,10 @@
 package com.brewedconcepts.hoppler;
 
-import android.support.v4.app.Fragment;
+
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -11,11 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 /**
@@ -24,6 +23,12 @@ import java.util.ArrayList;
 public class ListView_Fragment extends Fragment {
     private String[] stringArray;
 
+    // Declaring our tabs and the corresponding fragments.
+//    ActionBar.Tab sortTab, mapviewTab, photoviewTab;
+//    Fragment sortFragmentTab = new SortFragmentTab();
+//    Fragment mapviewFragmentTab = new MapViewFragmentTab();
+//    Fragment photoviewFragmentTab = new PhotoViewFragmentTab();
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,6 +36,26 @@ public class ListView_Fragment extends Fragment {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#007EFE")));
         View mRootView = inflater.inflate(R.layout.listview_main, container, false);
 
+        // Creating ActionBar tabs.
+//        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        // Setting custom tab icons.
+
+//        sortTab = bar.newTab().setText("SORT");
+//        mapviewTab = bar.newTab().setText("MAP VIEW");
+//        photoviewTab = bar.newTab().setText("PHOTO VIEW");
+
+
+        // Setting tab listeners.
+
+//        sortTab.setTabListener(new TabListener(sortFragmentTab));
+//        mapviewTab.setTabListener(new TabListener(mapviewFragmentTab));
+//        photoviewTab.setTabListener(new TabListener(photoviewFragmentTab));
+
+        // Adding tabs to the ActionBar.
+
+//        bar.addTab(sortTab);
+//        bar.addTab(mapviewTab);
+//        bar.addTab(photoviewTab);
 
         stringArray = new String[0];
         for (int i = 0; i < stringArray.length; i++) {
@@ -39,7 +64,7 @@ public class ListView_Fragment extends Fragment {
 
         ArrayList<User> arrayOfUsers = new ArrayList<User>();
 
-        String results = "{\"count\": \"3720\",\"results\": [{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"},{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"}]}";
+        String results = "{\"count\": \"3720\",\"results\": [{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"},{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"},{\"id\": \"23822\",\"addreNo\": \"\",\"name\": \"Fairways Tower\",\"addreArea\": \"Bonifacio Global City\",\"addreCity\": \"Taguig\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"2\", \"bedrooms\": \"1\",\"floorArea\": \"123\",\"rentalPrice\": \"123\"},{\"id\": \"1257\",\"addreNo\": \"\",\"name\": \"Farol St.\",\"addreArea\": \"Urdaneta Village\",\"addreCity\": \"Makati\",\"addreRegion\": \"National Capital Region\", \"bathrooms\": \"3\", \"bedrooms\": \"4\",\"floorArea\": \"530\",\"rentalPrice\": \"230000\"}]}";
 
         JSONObject myobj = null;
         try {
@@ -58,7 +83,7 @@ public class ListView_Fragment extends Fragment {
             for (int i = 0; i < json.length(); i++) {
 
                 house_sqm_j = json.getJSONObject(i).get("floorArea").toString() + "sqm";
-                house_price_j = json.getJSONObject(i).get("rentalPrice").toString();
+                house_price_j = "₱ " + json.getJSONObject(i).get("rentalPrice").toString();
                 house_address_j = json.getJSONObject(i).get("addreNo").toString() + " " + json.getJSONObject(i).get("name").toString() + " " + json.getJSONObject(i).get("addreArea").toString() + " " + json.getJSONObject(i).get("addreCity").toString() + " " + json.getJSONObject(i).get("addreRegion").toString();
                 house_br_j = "BR" + json.getJSONObject(i).get("bedrooms").toString();
                 house_ba_j = "BA" + json.getJSONObject(i).get("bathrooms").toString();

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -81,6 +82,7 @@ public class Login_Fragment extends Fragment {
         public void onClick(final View v) {
             switch(v.getId()){
                 case R.id.register:
+                    Log.v("MyTag_bool", "Clicked");
                    ((MainActivity2Activity)getActivity()).setRegistrationToFragment();
                     break;
             }

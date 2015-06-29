@@ -38,6 +38,7 @@
                     android:fontFamily="Roboto-Medium"
                     android:textSize="14dp"
                     android:textColor="#000000"
+                    android:textStyle="bold"
                     android:layout_marginBottom="14dp"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -85,6 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="P105K"
+                android:textStyle="bold"
                 android:fontFamily="LucidaGrande_Gold"
                 android:textSize="17dp"
                 android:textColor="#FF6817"
