@@ -60,4 +60,71 @@
     <string name="facebook_app_id">403442849849521</string>
 
     <string name="inquire_pv">INQUIRE</string>
+
+    <!--STATIC CONTENTS OF LISTVIEW-->
+    <string name="house_address">Sample sample sample</string>
+    <string name="house_sqm">234 sqm</string>
+    <string name="house_br">2BR</string>
+    <string name="house_ba">1BA</string>
+    <string name="house_id">ID:21DC4</string>
+    <string name="house_price">P105K</string>
+
+    <!--STATIC CONTENTS OF PHOTOVIEW-->
+    <string name="house_address_pv">Sample sample sample sample sample sample</string>
+    <string name="house_sqm_pv">234 sqm</string>
+    <string name="house_br_pv">2BR</string>
+    <string name="house_ba_pv">1BA</string>
+    <string name="house_id_pv">ID:21DC4</string>
+    <string name="house_price_pv">P105K</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="house_address_dp">123 De la Rosa St. Legazpi Village Makati City 1229</string>
+    <string name="house_sqm_dp">234 sqm</string>
+    <string name="house_br_dp">2BR</string>
+    <string name="house_ba_dp">1BA</string>
+    <string name="house_id_dp">ID:21DC4</string>
+    <string name="house_price_dp">P32,000</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="house_Features_dp">FEATURES</string>
+    <string name="house_PropertyType_dp">Property Type:</string>
+    <string name="house_Size_dp">Size:</string>
+    <string name="house_Beds_dp">Beds:</string>
+    <string name="house_Bath_dp">Bath:</string>
+    <string name="house_LeaseExpDate_dp">Lease Exp. Date:</string>
+    <string name="house_UpdatedOn_dp">Updated On:</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="house_PropertyType_text_dp">Occupied/For Rent</string>
+    <string name="house_Size_text_dp">320 sqm</string>
+    <string name="house_Beds_text_dp">3</string>
+    <string name="house_Bath_text_dp">2</string>
+    <string name="house_LeaseExpDate_text_dp">Jan. 03, 2016</string>
+    <string name="house_UpdatedOn_text_dp">Apr. 23, 2015</string>
+
+    <string name="house_Description_dp">DESCRIPTION</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="house_Description_text_dp">Legaspi Village is strategically located within Makati CBD which is known for the abundance of premium condominium buildings. Furthermore, the location also allows one to be a short walking distance to major office buildings, exclusive restaurants, premium bars, and cozy coffee shops.</string>
+    <string name="house_Note_dp">*Price &amp; availability  can change without notice, and may not be refelected in the last posted update. Availability  of a rent unit will be subject to the previous tenant's decision to renew their lease. For the latest status, please contact us.</string>
+
+    <string name="inquire_dp">INQUIRE</string>
+    <string name="giveuscall_dp">Give Us A Call:</string>
+    <string name="referenceID_dp">Reference ID:</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="giveuscall_number_dp">(+632) 8900062</string>
+    <string name="referenceID_text_dp">CR0119173</string>
+
+    <!--STATIC CONTENTS OF Detail Page-->
+    <string name="name_dp">Reynan Al</string>
+    <string name="contactNumber_dp">0915 574 1377</string>
+    <string name="email_dp">reynan@gmail.com</string>
+
+    <string name="send_dp">SEND</string>
+
+
+
+
+
 </resources>

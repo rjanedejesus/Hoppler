@@ -16,9 +16,9 @@
 
             <TextView
                 android:id="@+id/house_address_pv"
-                android:layout_width="200dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="Sample sample sample sample sample sample"
+                android:text="@string/house_address_pv"
                 android:singleLine="false"
                 android:textStyle="bold"
                 android:textColor="#ffffff"/>
@@ -27,10 +27,11 @@
                 android:id="@+id/house_price_pv"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="238K"
-                android:layout_marginLeft="70dp"
+                android:text="@string/house_price_pv"
+                android:layout_marginLeft="10dp"
                 android:textStyle="bold"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                />
         </LinearLayout>
 
 
@@ -44,7 +45,7 @@
                 android:id="@+id/house_sqm_pv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="234 sqm"
+                android:text="@string/house_sqm_pv"
                 android:fontFamily="Roboto-Bold"
                 android:textSize="10dp"
                 android:textColor="#ffffff"
@@ -53,7 +54,7 @@
                 android:id="@+id/house_br_pv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2BR"
+                android:text="@string/house_br_pv"
                 android:fontFamily="Roboto-Bold"
                 android:textSize="10dp"
                 android:textColor="#ffffff"
@@ -63,7 +64,7 @@
                 android:id="@+id/house_ba_pv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1BA"
+                android:text="@string/house_ba_pv"
                 android:fontFamily="Roboto-Bold"
                 android:textSize="10dp"
                 android:textColor="#ffffff"
@@ -73,7 +74,7 @@
                 android:id="@+id/house_id_pv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID:21DC4"
+                android:text="@string/house_id_pv"
                 android:fontFamily="Roboto-Bold"
                 android:textSize="10dp"
                 android:textColor="#ffffff"
