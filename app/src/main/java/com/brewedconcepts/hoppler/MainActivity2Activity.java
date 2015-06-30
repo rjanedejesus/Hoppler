@@ -27,6 +27,7 @@ public class MainActivity2Activity extends ActionBarActivity
     Fragment fragmentLogin;
     Fragment fragmentReg;
     ListView_Fragment fragmentListings;
+    PhotoView_Fragment fragmentPhotoview;
     Fragment fragmentMap;
 
     private String[] tabs = {"Login", "Register"};
@@ -123,6 +124,7 @@ public class MainActivity2Activity extends ActionBarActivity
         fragmentReg = new Registration_Fragment();
         fragmentMap = new SupportMapFragment();
         fragmentListings = new ListView_Fragment();
+        fragmentPhotoview = new PhotoView_Fragment();
 //        fragmentManager.beginTransaction()
 //                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
 //                .commit();
@@ -141,6 +143,11 @@ public class MainActivity2Activity extends ActionBarActivity
             case 2:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, fragmentListings)
+                        .commit();
+                break;
+            case 3:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragmentPhotoview)
                         .commit();
                 break;
         }
@@ -184,7 +191,7 @@ public class MainActivity2Activity extends ActionBarActivity
 
 
     public void setRegistrationToFragment() {
-        Log.v("MyTag_bool", "Clicked");
+      
         fragmentManager.beginTransaction()
         .replace(R.id.container, fragmentReg)
         .commit();

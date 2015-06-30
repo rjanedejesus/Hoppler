@@ -12,26 +12,26 @@ import java.util.ArrayList;
 /**
  * Created by RoseJane on 6/24/2015.
  */
-public class UsersAdapter extends ArrayAdapter<User> {
-    public UsersAdapter(Context context, ArrayList<User> users) {
+public class UsersAdapter_PhotoView extends ArrayAdapter<User_PhotoView> {
+    public UsersAdapter_PhotoView(Context context, ArrayList<User_PhotoView> users) {
         super(context, 0, users);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position
-        User user = getItem(position);
+        User_PhotoView user = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.listview_each_item, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.photoview_layout, parent, false);
         }
         // Lookup view for data population
-        TextView tv_house_address = (TextView) convertView.findViewById(R.id.house_address);
-        TextView tv_house_sqm = (TextView) convertView.findViewById(R.id.house_sqm);
-        TextView tv_house_br= (TextView) convertView.findViewById(R.id.house_br);
-        TextView tv_house_ba = (TextView) convertView.findViewById(R.id.house_ba);
-        TextView tv_house_id = (TextView) convertView.findViewById(R.id.house_id);
-        TextView tv_house_price = (TextView) convertView.findViewById(R.id.house_price);
+        TextView tv_house_address = (TextView) convertView.findViewById(R.id.house_address_pv);
+        TextView tv_house_sqm = (TextView) convertView.findViewById(R.id.house_sqm_pv);
+        TextView tv_house_br= (TextView) convertView.findViewById(R.id.house_br_pv);
+        TextView tv_house_ba = (TextView) convertView.findViewById(R.id.house_ba_pv);
+        TextView tv_house_id = (TextView) convertView.findViewById(R.id.house_id_pv);
+        TextView tv_house_price = (TextView) convertView.findViewById(R.id.house_price_pv);
 
         // Populate the data into the template view using the data object
         tv_house_address.setText(user.house_address);

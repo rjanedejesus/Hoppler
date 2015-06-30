@@ -15,7 +15,7 @@
             android:layout_marginTop="70dp">
 
             <TextView
-                android:id="@+id/location_pv"
+                android:id="@+id/house_address_pv"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="Sample sample sample sample sample sample"
@@ -24,7 +24,7 @@
                 android:textColor="#ffffff"/>
 
             <TextView
-                android:id="@+id/price_pv"
+                android:id="@+id/house_price_pv"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="238K"
