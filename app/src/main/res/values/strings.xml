@@ -9,6 +9,7 @@
     <string name="title_section2">Register</string>
     <string name="title_section3">Listings Nearby</string>
     <string name="title_section4">Photo View</string>
+    <string name="title_section5">Detail Page</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -106,7 +107,7 @@
 
     <!--STATIC CONTENTS OF Detail Page-->
     <string name="house_Description_text_dp">Legaspi Village is strategically located within Makati CBD which is known for the abundance of premium condominium buildings. Furthermore, the location also allows one to be a short walking distance to major office buildings, exclusive restaurants, premium bars, and cozy coffee shops.</string>
-    <string name="house_Note_dp">*Price &amp; availability  can change without notice, and may not be refelected in the last posted update. Availability  of a rent unit will be subject to the previous tenant's decision to renew their lease. For the latest status, please contact us.</string>
+    <string name="house_Note_dp">*Price &amp; availability  can change without notice, and may not be reflected in the last posted update. Availability of a rent unit will be subject to the previous tenant\'s decision to renew their lease. For the latest status, please contact us.</string>
 
     <string name="inquire_dp">INQUIRE</string>
     <string name="giveuscall_dp">Give Us A Call:</string>
