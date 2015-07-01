@@ -4,7 +4,8 @@
 
     <uses-sdk
     android:minSdkVersion="7"
-    android:targetSdkVersion="18" />
+    android:targetSdkVersion="18"
+    />
 
     <android:uses-permission
     android:name="android.permission.WRITE_EXTERNAL_STORAGE"

@@ -78,10 +78,17 @@
                 android:textSize="16dp"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
-                android:layout_width="match_parent"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:fontFeatureSettings="roboto-regular"
                 android:textColor="#4f4f4f" />
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/forgot_password"
+                />
         </LinearLayout>
 
         <Button

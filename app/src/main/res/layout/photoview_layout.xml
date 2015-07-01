@@ -4,7 +4,8 @@
     android:layout_height="150dp"
     android:background="@drawable/sample_photoview"
     android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="5dp">
 
 
         <LinearLayout
